@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style-common.css">
+  <link rel="stylesheet" href="style-responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8fec4a8a2d.js" crossorigin="anonymous"></script>
+  <title>Sport Warehouse</title>
+</head>
+
+<body>
+<div class="page">
+  <header class="top-bar">
+    <div class="container">
+      <nav class="menu">
+        <label id="menu-toggle" class="menu__toggle"><span>&#9776;</span> Menu</label>
+        <ul class="menu__items">
+          <li class="menu__item "><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About SW</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">View Products</a></li>
+          <li class="menu__item button-first">
+            <img src="images/.png" alt="Login">
+            <a class="button__link menu__link" href="#">Log In</a></li>
+        </ul>
+
+        <ul class="menu__items-right">
+          <li class="menu__item button-first-desktop">
+            <img src="images/.png" alt="Login">
+            <a class="button__link menu__link" href="#">Log In</a></li>
+      
+          <li class="menu__item button-secondary">
+            <img src="images/cart-icon.png" alt="View Cart">
+            <a class="button__link menu__link" href="#">View Cart</a></li>
+             
+            <li class="menu__item button-third">
+            <a class="button__link menu__link" href="#">0 items</a></li>
+         
+            <!-- <a class="cart-count" href="#">
+              <span class="item-count">0</span> items
+            </a>             -->
+        </ul>
+
+
+        <!-- <div class="icons">
+          <a class="login" href="#">
+            <img src=".png" alt="Login">
+            <span>Login</span>
+          </a>
+          <a class="view-cart" href="#">
+            <img src="cart icon.png" alt="View Cart">
+            <span>View Cart</span>
+          </a>
+          <a class="cart-count" href="#">
+            <span class="item-count">0</span> items
+          </a>
+        </div> -->
+
+      </nav>
+    </div>
+    </header> 
+
+
+  <div class="site-wrapper">    
+  
+       <header class="search-container">
+        <img class="logo" src="images/sports-warehouse-logo-290_1.png" alt="Sport Warehouse Logo">
+        <div class="search">
+          <div class="search-box">
+           
+            <input id="search-input" class="search-input" type="text" placeholder="Search products">
+           <!--input class="search-input" type="text" placeholder="Search products"-->
+          </div>
+          <div class="search-button">
+          <button><img src="images/search-icon.png" alt="Search"></button>
+          </div>
+        </div>   
+       </header>
+    <nav class="category-menu">
+      <ul>
+        <li><a href="#">Shoes<i class="fa-solid fa-angle-right"></i></a></li>
+          <!-- <span class="arrow">&gt;</span> -->
+        <li><a href="#">Helmets<i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#">Pants<i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#">Tops<i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#">Balls<i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#">Equipment<i class="fa-solid fa-angle-right"></i></a></li>
+        <li><a href="#">Training Gear<i class="fa-solid fa-angle-right"></i></a></li>
+      </ul>
+    </nav>
+
+
+    <div class="banner">
+      <!-- Banner images here -->
+      <img src="images/Bannerimage.png" alt="Sport Warehouse Banner" class="banner-img">
+      <div class="dots-container">
+        <span class="dot" onclick=""></span> 
+        <span class="dot" onclick=""></span> 
+        <span class="dot" onclick=""></span> 
+      </div>
+      <div class="banner-content">
+        <p class="banner-text1">View Our Brand<br>new range of</p>
+        <p class="banner-text2">Sports<br>balls</p>
+        <button class="shop-button">Shop now</button>
+      </div>
+    </div>
+
+
+
+    <section class="featured-products">
+      <div class="white-text">
+        <p>Featured Products</p>
+      </div>
+      <div class="product-grid">
+
+        <div class="product">
+          <div class="image-container">
+          <img src="images/prod-image.jpg" alt="Product 1">
+        </div>
+        <span class="price-main">$34.95</span>
+        <span class="original">WAS</span>
+        <span class="price-secondary">$46.00</span>
+        <p class="product-name">adidas Euro16 Top Soccer Ball</p>
+        </div>
+
+        <div class="product">
+
+          <div class="image-container">
+          <img src="images/helmet.png" alt="Product 2">
+        </div>
+          <p class="product-price">$70.00</p>
+          <p class="product-name">Pro-tec Classic Skate Helmet</p>
+        </div>
+
+        <div class="product">
+          <div class="image-container">
+          <img src="images/waterbottle.png" alt="Product 3">
+        </div>
+        <span class="price-main">$15.00</span>
+        <span class="original">WAS</span>
+        <span class="price-secondary">$17.50</span>
+        <p class="product-name">Nike Sport 600ml Water Bottle</p>
+        </div>
+
+        <div class="product">
+          <div class="image-container">
+          <img src="images/boxing-gloves.png" alt="Product 4">
+        </div>
+          <p class="product-price">$79.95</p>
+          <p class="product-name">Sting ArmaPlus Boxing Gloves</p>
+        </div>
+
+        <div class="product">
+          <div class="image-container">
+          <img src="images/football-boots.jpg" alt="Product 5">
+        </div>
+          <p class="product-price">$160.00</p>
+          <p class="product-name">Asics Gel Lethal Tigreor 8 IT Men’s FG Boots</p>
+        </div>
+
+    </div>
+    </section>
+
+
+    <section class="brands-partnerships">
+      <div class="white-text">
+        <p>Our Brands and Partnerships</p>
+      </div>
+
+      <div class="partnership">
+        <!-- <div class="brands">
+          <p>These are some of our top brands and partnerships. The best of the best is here.</p>
+        </div>       -->
+
+        <p class="brands">These are some of our top brands and partnerships.<br>The best of the best is here.</p>
+
+        <div class="logo-container">
+          <div class="logo logo-wilson">
+            <img src="images/logo_nike_1.png" alt="Nike">
+          </div>
+          <div class="logo logo-newbalance">
+            <img src="images/logo_adidas_1.png" alt="Adidas">
+          </div>
+          <div class="logo logo-asics">
+            <img src="images/logo_skins_1.png" alt="Skins">
+          </div>
+          <div class="logo logo-asics">
+            <img src="images/logo_asics_1.png" alt="ASICS">
+          </div>
+          <div class="logo logo-newbalance">
+            <img src="images/logo_newbalance_1.png" alt="New Balance">
+          </div>
+          <div class="logo logo-wilson">
+            <img src="images/logo_wilson_1.png" alt="Wilson">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-column footer-column1">
+        <h4>Site Navigation</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About SW</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">View Products</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column footer-column2">
+        <h4>Product Categories</h4>
+        <ul>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Helmets</a></li>
+          <li><a href="#">Pants</a></li>
+          <li><a href="#">Tops</a></li>
+          <li><a href="#">Balls</a></li>
+          <li><a href="#">Equipment</a></li>
+          <li><a href="#">Training Gear</a></li>
+        </ul>
+      </div>
+      <div class="footer-column footer-column3">
+        <h4>Contact Sports Warehouse</h4>
+        <div class="social-media">
+          <div>
+            <a href="#">
+              <img src="images/facebook-icon.png" alt="facebook">
+              <p>Facebook</p>
+            </a>            
+          </div>
+          <div>
+            <a href="#">
+              <img src="images/twitter-icon.png" alt="twitter">
+              <p>Twitter</p>
+            </a>
+          </div>
+          <div>
+            <!-- <a href="#">
+              <img src="images/other-icon.png" alt="telegram">              
+              <p>Other</p>
+            </a> -->
+
+            <a href="#">
+              <i class="fa-solid fa-paper-plane"></i>
+              <p>Other</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    <div><p>© Copyright 2023 Sports Warehouse.&amp;nbsp;<p></div>
+    <div><p>All rights reserved.&amp;nbsp;</p></div>
+    <div><p>Website made by Awesomesauce Design.</p></div>
+    <div><p>& Your Name Here.</p></div>
+  </div>
+
+</div>
+
+  
+  <script>
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const menuToggle = document.querySelector('.menu__toggle');
+//   const menu = document.querySelector('.menu ul');
+//   const loginItem = document.querySelector('.login');
+
+//   // Move login item into the menu initially
+//   menu.insertBefore(loginItem, menu.firstChild);
+
+//   menuToggle.addEventListener('click', function () {
+//     menu.classList.toggle('show');
+//   });
+// });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.querySelector('.menu__toggle');
+  const menuItems = document.querySelector('.menu__items');
+  const loginItem = document.querySelector('.button-first');
+
+  menuToggle.addEventListener('click', function () {
+    menuItems.classList.toggle('show');
+
+    if (menuItems.classList.contains('show')) {
+      menuItems.insertBefore(loginItem, menuItems.firstChild);
+    } else {
+      menuItems.appendChild(loginItem);
+    }
+  });
+});
+
+
+
+
+    </script>
+
+</body>
+
+</html>

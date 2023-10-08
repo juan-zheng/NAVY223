@@ -1,0 +1,850 @@
+/* Styles for screens with a width of 320px or less (mobile) */
+
+    /* Media query for 320px wide mobile */
+    /* Styles for screens with a width of 320px or less (mobile) */
+    @media only screen and (max-width: 320px) {
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box; 
+        }
+  
+  
+  
+      /* Adjust the layout of the search box and button */
+  .search-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items:flex-start;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+  
+  
+  
+  .search-container .logo {
+  
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    /* padding: 12px; */
+  
+  }
+  
+  
+  .search {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  /* margin: 0 5px 0 10px; */
+  margin-left: 30px;
+  }
+  
+  
+  
+  .search-box {
+  
+    overflow: hidden; 
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding: 5px; /* Add padding to separate from edges */
+    max-width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #595959;
+  
+  
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    border: none;
+    /* padding: 5px;  Adjust input padding for better spacing */
+    box-sizing: border-box; /* Include padding and border in the width */
+    max-width: 199px;
+    height: 30px;
+    font-size: 16px;
+    color: #595959;
+    font-weight: 400;
+    font-family: "Open Sans";
+  }
+  
+  .search-button {
+  
+    border: none;
+    /* padding: 10px;   */
+    cursor: pointer;
+    box-sizing: border-box; /* Include padding and border in the width */
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 20px;
+    background-color: #002936;
+  
+  
+  }
+  
+  .search-button img {
+    width: auto;
+    height: auto;
+    display: block;
+  }
+  
+  
+      
+      
+        /* Adjust the category menu styles for mobile */
+        .category-menu {
+          background-color: #002936;
+          padding: 0;   
+          height: auto;
+          border-radius: 0; /* Remove rounded corners */
+          /* width: 320px; */
+          margin: 0; /* Center the menu */
+         /* width: 100%;  Full width for mobile */
+          max-width: 100%; /* Limit maximum width */
+  
+        }
+      
+        .category-menu ul {
+          list-style: none;
+          margin: 5px;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap; /* Wrap items onto new lines */
+          justify-content: space-between; /* Distribute items evenly */
+        }
+      
+        .category-menu li {
+          list-style: none;   
+          /* padding: 2px;  Add spacing around items */        
+          /* box-sizing: border-box;  Include padding in width calculations */
+          /*  border-right: none;  Remove right border */
+          /* border-radius: 5%; */
+          /* border-radius: 100px 0 0 100px;  Adjust border-radius for shorter length */
+          /* width: 145px;  Display two items in each line */
+          height: 40px;
+          border-radius: 5px;
+          background-color: #002936;
+          border: 1px solid #00aced;
+          margin: 5px 0; /* Add some vertical spacing */
+          width: calc(50% - 5px); /* Display two items in each line with a small gap */   
+      
+       
+        }
+  
+  
+        /* .category-menu .arrow {
+          color: #00aced;
+         } */
+  
+      
+        .category-menu a {
+          display: block;  
+          text-decoration: none;
+        padding: 10px;
+          transition: background-color 0.3s;
+          /* padding: 10px 15px;  Adjust padding for shorter length */
+          font-size: 16px;
+          color: #fefefe;
+          font-weight: 400;
+          font-family: "Open Sans";
+        }
+      
+        .category-menu a:hover {
+          /* background-color: #00ACED; */
+          /* border-radius: 0;  Remove rounded corners on hover */
+          width: auto;
+          height: 40px;
+          border-radius: 5px;
+          background-color: #00aced;
+          border: 1px solid #00aced;
+        }
+      
+      .banner {
+        display: none;
+      }
+  
+  
+      .white-text {
+  
+        padding: 10px 30px;
+        color: #fefefe;
+        font-weight: 400;
+        max-width: 100%;
+        height: 46px;
+        /* text-align: center; */
+      }
+  
+  
+    
+  
+  
+  }
+  
+  
+  /* Styles for mobile (320px) */
+  @media (max-width: 320px) {
+  
+  
+    .brands-partnerships {
+  
+      max-width: 100%;
+        /* display: flex; 
+        flex-direction: column;
+        align-items: center; */
+  
+    }
+  
+  
+    .partnership {
+  
+        width: 100%; /* Take the full width */
+        display: flex; 
+        flex-direction: column;
+        align-items: center; /* Center align items horizontally */
+  justify-content: space-between;
+  
+    }
+  
+  
+    .partnership .brands {
+      padding: 0 0 3px 10px;
+    }
+  
+    .logo-container {
+   
+        width: 100%; /* Take the full width */
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0%;
+        margin: 10px 0;
+    }
+  
+    .logo {
+        padding: 10px;
+        width: calc(33.33% - 10px); /* Adjust the width to fit 3 logos per row with some spacing */
+   
+    }
+  
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+  
+  
+  /* .site-footer {
+  
+    max-width: 100%;
+  height: auto;
+  } */
+  
+  .site-footer .container {
+    max-width: 100%;
+  height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+  }
+  
+  
+  .footer-column {
+  
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 15px;
+  
+  }
+  
+  .social-media p {
+  
+    margin: 5px;
+  
+  }
+  
+  
+  .footer-column2 {
+    display: none;
+  }
+  
+  .other {
+  display: none;
+  }
+  
+  }
+  
+  
+  /* Media query for mobile */
+  
+    /* @media screen and (max-width: 352px) { */
+  @media (max-width: 320px) {
+  
+    .container {
+      max-width: 100%;
+  }
+  
+    .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Added to separate menu and cart links */
+  align-items: center; /* Center vertically */
+  
+    }
+  
+    .menu__items {
+      
+      /* display: none; Hide the menu items by default */
+      /* flex-direction: column;
+      position: absolute; */
+      /* top: 50px;   Adjust as needed */
+      /* background-color: #00aced;
+      border: 1px solid #00aced; */
+      width: 100%;
+      /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+    height: 240px;
+    /* left: 0; */
+  /* top: 100%; /* Position dropdown menu below the toggle */
+  /* z-index: 2; /* Ensure the dropdown menu is above the category menu */
+  
+  
+    } 
+  
+  
+    .menu__item.button-first img {
+      margin-right: 10px;
+    }
+    
+    
+  
+    .menu__items li {
+  line-height: 10px;
+      border-bottom: 1px solid #ccc;
+      color: white;
+      list-style-type: circle;
+      list-style-position: inside;
+      padding-left: 15px;
+      font-size: 25px;
+  
+    }
+  
+    .menu__toggle span {
+      font-weight: bold;
+        }
+  
+    .menu__toggle {
+      display: block;
+      position: relative;
+      /* margin-right: auto; */
+    
+    }
+  
+    .button-first {
+         display:inline-block;
+      }
+  
+    .menu__items-right {
+      display: flex;
+      align-items: center; /* Center vertically */
+      /* position: absolute; */
+  
+    }
+  
+    .menu__items.show {
+      display: flex; /* Show the menu items when the class is added */
+    }
+  
+  
+  
+  
+    .menu__items .menu__item {
+      margin: 0;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .button-secondary {
+      margin-right: 10px; /* Adjust the spacing as needed */
+      display: inline-block; /* Show the Sign Up button in mobile */
+    }
+  
+    /* Adjust the positioning of the "View Cart" and "0 items" links */
+    .button-secondary,
+    .button-third {
+      margin: 0; /* Reset margin */
+      padding: 0 10px; /* Add padding to space the links */
+    }
+  
+    .button-first-desktop {
+      display: none;    
+      }
+    
+  }
+  
+  
+  /* Add media query for mobile screens */
+  
+    /* Styles for screens with a width between 320px and 375px (e.g., tablets) */
+  /* @media (min-width: 321px) and (max-width: 375px) {
+  
+    .header {
+      width: calc(50% - 10px);
+    }
+  } */
+  
+  
+    /* Styles for screens with a width equal and less than 375px */
+    @media (max-width: 375px) {
+    .product {
+      width: calc(50% - 10px); /* Display every two products in a line with spacing */
+      /* Adjusted width and margin to accommodate two products with spacing */
+      margin: 10px; /* Add margin for spacing between products */
+    }
+  
+    .product-grid {
+      /* justify-content: center;  Center products on mobile screens */
+      align-items: center;
+    }
+  
+  
+  }
+  
+  
+  /* Media query for screens with a width of 994px */
+  @media (max-width: 995px) {
+    /* CSS rules for screens with a width of 994px or smaller */
+  
+    /* Adjust the layout for smaller screens */
+    .brands-partnerships .partnership {
+      flex-direction: column; /* Stack elements vertically */
+      justify-content: space-around;
+      display: flex;
+  
+    }
+  
+  
+  .partnership .brands {
+    margin-bottom: 10px;
+  }
+  
+  
+    /* Ensure logos remain centered in the second and third lines */
+    .brands-partnerships .logo-container {
+      max-width: 100%; /* Limit the container width */
+      display: flex;
+      flex-wrap: wrap; /* Allow logos to wrap to the next line */
+  
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+  border-radius: 0%;
+  }
+  
+  .logo {
+  
+    margin:5px;
+  }
+  
+    /* .logo {
+   margin: 10px;
+  width: auto;
+  height: auto;
+  } */
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  }
+  
+  @media (max-width: 995px) {
+  .search-container {
+    flex-direction: column; /* Stack items vertically on mobile */
+    margin-bottom: 20px;
+  }
+  
+  .search-box {
+    width: 250px;
+  }
+  
+  }
+  
+  /* @media (max-width: 768px) */
+    @media (max-width: 792px) {
+   
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;    
+      /* margin: -5px;  Add negative margin to counteract padding */    
+      max-width: 100%;
+      height: auto;
+      align-items: flex-start;
+  
+    }
+  
+  
+    .product {
+      /* width: calc(30% - 10px); /* Display every three products in a line with spacing */
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      padding: 5px;
+      box-sizing: border-box;
+      text-align: center;
+      margin: 5px; /* Add margin for spacing between products */
+    }
+  
+    .image-container {
+      margin-bottom: 5px;
+    }
+  
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .product-price {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 3px 0;
+    }
+  
+    .product-name {
+      font-size: 12px;
+      margin: 0;
+    }
+  
+    .price-main,
+    .price-secondary {
+      font-size: 12px;
+      font-weight: bold;
+      display: block;
+    }
+  
+    .original {
+      font-size: 10px;
+      text-decoration: line-through;
+    }
+  
+    .white-text {
+  
+      padding: 10px 30px;
+      color: #fefefe;
+      font-weight: 400;
+      max-width: 100%;
+      height: 46px;
+      /* text-align: center; */
+    }
+  
+  
+    .footer-column2 {
+      display: none;
+    }
+  
+  
+  
+        .social-media {
+  display: flex;
+  justify-content: flex-start;
+  
+  
+        }
+  
+  
+  
+  }
+  
+  /* @media (max-width: 849px) {
+  
+    .banner img{
+      display: none;
+    }
+  
+  } */
+  
+  @media (max-width: 849px) {
+  
+    .banner img{
+   max-width: 95%;
+   height: auto;
+    }
+  
+  
+    .banner-text1 {
+  
+      font-size: 15px;
+  
+    }
+    
+    .banner-text2 {
+  
+      font-size: 40px; /* Increase font size */
+  
+    }
+    
+    
+    .shop-button {
+  
+      font-size: 15px;
+  
+    }
+  
+  
+  }
+  
+  
+  /* @media (max-width: 792px) { */
+  
+    @media (max-width: 999px) {
+    .container {
+      max-width: 100%;
+  }
+  
+    .menu {
+  display: flex;
+  flex-direction: row;
+    }
+  
+    .menu__items {
+      display: none; /* Hide the menu items by default */
+      flex-direction: column;
+      position: absolute;
+      top: 50px; /* Adjust as needed */
+      background-color: #00aced;
+      border: 1px solid #00aced;
+      max-width: 100%;
+      /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+    /* height: 190px; */
+    left: 0;
+    z-index: 2; /* Ensure the dropdown menu is above the category menu */
+    } 
+  
+    .menu__items .menu__item {
+      margin: 0;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+  
+  
+  .menu__items-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    right: 5px; /* Adjust as needed for the desired position on both mobile and tablet */
+  
+  }
+  
+  /* .button-first-desktop {
+    display: none;    
+    } */
+  
+  .button-first {
+    /* display:inline-block; */
+    /* display: none; */
+  }
+  
+  
+   /* .menu__items-right {
+  margin-left: 100px;    
+    } */
+  
+    .menu__items-right {
+      position: absolute;
+      align-items: center;
+      }
+  
+    /* .menu__items-right .menu__item {
+  gap: 5px;
+    } */
+  
+  
+    /* .menu__items-right li{
+  margin-right: 15px;
+  
+    } */
+  
+  
+    .menu__items li {
+      line-height: 10px;
+          border-bottom: 1px solid #ccc;
+          color: white;
+          list-style-type: circle;
+          list-style-position: inside;
+          padding-left: 15px;
+          font-size: 25px;
+       
+        }
+      
+        .menu__toggle span {
+          font-weight: bold;
+            }
+  
+  
+    .menu__toggle {
+      display: block;
+      position: relative;
+      /* margin-right: auto; */  
+    }
+  
+  
+    .menu__items.show {
+      display: flex; /* Show the menu items when the class is added */
+    }
+  
+    /* .button-secondary {
+      margin-right: 2px;
+      display: inline-block;
+    } */
+  
+  
+  
+  }
+  
+    
+  
+  
+  
+  @media (max-width: 792px) {
+   
+    .banner img{
+      display: none;
+    }
+  
+  }
+  
+  
+  
+  @media (max-width: 792px) {
+  
+     /* Adjust the category menu styles for mobile */
+     .category-menu {
+      background-color: #002936;
+      padding: 0;   
+      height: auto;
+      border-radius: 0; /* Remove rounded corners */
+  max-width: 100%;
+      margin: 0; /* Center the menu */
+      /* position: relative;  Make the <li> element a positioning context */
+    }
+  
+    .category-menu ul {
+      list-style: none;
+      margin: 5px;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap; /* Wrap items onto new lines */
+      justify-content: space-between; /* Distribute items evenly */
+    }
+  
+    .category-menu li {
+      list-style: none;   
+      /* height: 40px; */
+      border-radius: 5px;
+      background-color: #002936;
+      border: 1px solid #00aced;
+      margin: 5px 0; /* Add some vertical spacing */
+      width: calc(50% - 5px); /* Display two items in each line with a small gap */
+  
+    }
+  
+    .category-menu li {
+      position: relative; /* Create a positioning context for the icon */
+      /* padding: 10px; */
+       /* margin-bottom: 10px; */
+    }
+  
+    .category-menu .fa-angle-right {
+      position: absolute;
+      top: 30%;
+      right: 10px; /* Adjust the right position as needed */
+      /* top: 50%;
+      transform: translateY(-50%);  Vertically center the icon */
+    }
+  
+  
+    .category-menu a {
+      display: block;  
+      text-decoration: none;
+      transition: background-color 0.3s;
+      font-size: 16px;
+      color: #fefefe;
+      font-weight: 400;
+      font-family: "Open Sans";
+    }
+  
+    .category-menu a:hover {
+  
+      width: auto;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #00aced;
+      border: 1px solid #00aced;
+    }
+  
+    .fa-angle-right {
+      display: inline-block !important;
+    }
+  
+  
+  }
+  
+  
+  
+  @media (max-width: 496px) {
+  
+    .site-footer {
+    max-width: 100%;
+    height: auto;
+    /* height: 100%; */
+    }
+    
+    .site-footer .container { 
+      max-width: 100%;
+      height: auto; 
+        /* height: 100%; */
+      display: flex;
+      flex-direction: column;
+      /* justify-content: space-around; */
+  
+      }
+    
+    
+    .footer-column1 {  
+      /* max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 15px;   */
+  
+  
+    }
+  
+    .other {
+      display: none;    
+      }
+  
+  }
+  
+  
+  @media (max-width: 600px) {
+  
+    .copyright {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+            margin-top: 10px;
+            text-align: center;      
+            }
+  
+  
+  }
